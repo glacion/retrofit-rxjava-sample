@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.util.Scanner;
 
-public class App {
+class App {
   private final String url = "https://api.github.com";
   private final Gson gson = new GsonBuilder().setLenient().create();
 

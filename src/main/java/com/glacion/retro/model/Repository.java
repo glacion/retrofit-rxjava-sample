@@ -14,7 +14,8 @@ public class Repository {
   private final int forks;
   private final int stars;
 
-  public Repository(String name, String url, String description, String language, int forks, int stars) {
+  public Repository(
+    String name, String url, String description, String language, int forks, int stars) {
     this.name = name;
     this.url = url;
     this.description = description;

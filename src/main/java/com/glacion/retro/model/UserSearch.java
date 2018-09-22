@@ -11,16 +11,16 @@ public class UserSearch {
   @SerializedName("items")
   private final List<User> users;
 
+  public UserSearch(int totalCount, List<User> users) {
+    this.totalCount = totalCount;
+    this.users = users;
+  }
+
   public int getTotalCount() {
     return totalCount;
   }
 
   public List<User> getUsers() {
     return users;
-  }
-
-  public UserSearch(int totalCount, List<User> users) {
-    this.totalCount = totalCount;
-    this.users = users;
   }
 }

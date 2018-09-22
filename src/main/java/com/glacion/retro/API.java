@@ -6,7 +6,7 @@ import io.reactivex.Observable;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-public interface API {
+interface API {
   @GET("/search/users")
   Observable<UserSearch> getUsers(@Query("q") String name);
 
